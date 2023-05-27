@@ -1,0 +1,5 @@
+selenium
+pandas
+numpy
+BS4
+re
