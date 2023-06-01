@@ -20,7 +20,28 @@ ALIEXPRESS WEBSCRAPER
 
     To code this program we have used different functions:
 
-        - time_randomizer(): this function applies a time.sleep method during x second. And x second are chosen randomly between 2 numbers t1 & t2.
+        - time_randomizer(t1,t2): this function applies a time.sleep method during x second. And x second are chosen randomly between 2 numbers t1 & t2.
                             t1 minimum time & t2 maximum time. 
-        - init_setup
+
+        - starting_setup(): this function uses module selenium to follow several steps. 
+            1) Open a new window with the browser Chrome.
+            2) Goes to aliexpress webpage
+            3) Click on accept cookies
+            4) Click on category "electronics"
+            5) Click on category "videogames"
+            6) Click on "sort by order quantity"
+            7) Click on "sort by rating>=4"
+            8) Scroll down to the botton of the webpage
+        
+        - page_scraper(html):  this function uses module BeautifulSoup to scrap data from the current webpage. Its input is the html which has been       collected in the main program. It gets the data and turn them into lists and after that turn the lists into df, which is the return of the function.
+
+        -It is planned to code some other usefull functions to work on the global_dataframe 
+            1) filters
+            2) sorters
+            3) ploters
+        
+
+AMAZON WEBSCRAPER
+
+
 
