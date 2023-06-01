@@ -1,5 +1,8 @@
 selenium
+selenium.webdriver
 pandas
 numpy
-BS4
+bs4
 re
+time
+random
