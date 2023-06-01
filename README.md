@@ -1,1 +1,26 @@
 # Project-4-The-Joker
+This is ithe project 4 of the bootcamp for data analytics of Iron Hack
+The target of the project is to webscrape data from 2 different webpages in order to find find some profitable business oportunities. In this case they will be Aliexpress & Amazon. The idea is gather an extensive dataset with information about products (we will focus on videogames related products).
+Once the dataset are cleaned, we will try to find matches in the products from both webpages. Then we will study the differences in price, delivery time and so on. Returning information about the most profitable oportunities.
+With all this information we will create 2 different bussineses.
+    - Start our own company of drop shipping attending to the result obteined.
+    - Start our own company of data selling, in order to help other small companies which will need information actualized and clenaned about the products of this companies. 
+
+The code is divided in several parts.
+
+
+ALIEXPRESS WEBSCRAPER
+
+    The code in Python, use 2 diferent modules to be able to wenbscrap the Aliexpress webpage. Using selenium, the program does the required steps to get the first page that will be scraped(inccluding down scrolling). Once there, using the module BeautifulSoup, it gets the html. Taking advantage of a for loop, the program will webscrape data from the first 100 pages of that kind of products. This will be done using patterns to modiify the url when we want to move from one webpage to the next one. 
+
+    In each loop the data will be collected in a partial df which will be concatenated to the main one, called global_dataframe. 
+
+    Once the lobal_dataframe is finished it will saved as a not_cleaned_csv file first.
+    The df will pass trhoughout several steps of dataclenaning and then another csv will be created. In this case, yes, the finished one.
+
+    To code this program we have used different functions:
+
+        - time_randomizer(): this function applies a time.sleep method during x second. And x second are chosen randomly between 2 numbers t1 & t2.
+                            t1 minimum time & t2 maximum time. 
+        - init_setup
+
